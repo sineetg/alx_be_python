@@ -1,4 +1,4 @@
-weather_prompt  = input("What's the weather like today? (sunny/rainy/cold): ")
+weather_prompt  = input("What's the weather like today? (sunny/rainy/cold): ").lower()
 
 
 if weather_prompt == "sunny":
