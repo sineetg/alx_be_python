@@ -1,26 +1,10 @@
-# main.py
-
-from library_management import Book, Library
+from book_class import Book
 
 def main():
-    # Setup a small library
-    library = Library()
-    library.add_book(Book("Brave New World", "Aldous Huxley"))
-    library.add_book(Book("1984", "George Orwell"))
-
-    # Initial list of available books
-    print("Available books after setup:")
-    library.list_available_books()
-
-    # Simulate checking out a book
-    library.check_out_book("1984")
-    print("\nAvailable books after checking out '1984':")
-    library.list_available_books()
-
-    # Simulate returning a book
-    library.return_book("1984")
-    print("\nAvailable books after returning '1984':")
-    library.list_available_books()
+    my_book = Book("1984", "George Orwell", 1949)
+    print(my_book)
+    print(repr(my_book))
+    del my_book
 
 if __name__ == "__main__":
     main()
